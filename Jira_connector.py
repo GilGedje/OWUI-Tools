@@ -24,11 +24,11 @@ class Tools:
         """Admin-level configuration (set by OpenWebUI administrators)"""
 
         MCP_SERVER_URL: str = Field(
-            default="https://ai-proxy.gedje.space/mcp/",
+            default="https://<LITELLM_APU_URL>/mcp/",
             description="The LiteLLM MCP proxy endpoint URL",
         )
         MCP_SERVER_GROUP: str = Field(
-            default="dev_group",
+            default="<MCP_GROUP>",
             description="MCP server group identifier (sent in x-mcp-servers header)",
         )
         ENABLED_TOOLS: str = Field(
